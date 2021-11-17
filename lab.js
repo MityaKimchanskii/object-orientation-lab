@@ -23,7 +23,7 @@ let dog = {
   name: 'Dog',
   color: 'green',
   age: 3,
-  'goodBoy/goodGirl': true
+  goodBoy: true
 }
 
 
@@ -112,6 +112,12 @@ console.log(year)
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
+// var obj1 = {
+//   firstName: 'Tom',
+//   lastName: 'Kruz',
+//   title: 'Mission impossible'
+// }
+
 
 function greeting( obj ) {
   //Code Here
@@ -120,6 +126,7 @@ function greeting( obj ) {
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
+// console.log(greeting(obj1))
 
 
 //////////////////////////// PROBLEM 8 /////////////////////////////////////////////////////////////////////////////////
@@ -167,7 +174,7 @@ function ingredients(ingrid){
   const {carb, fat, protein} = ingrid
   // let arrIngrid = []
   let arrIngrid1 = []
-  for (key in ingrid){
+  for ( let key in ingrid){
     // arrIngrid.push(ingrid[key])
     arrIngrid1.push(key)
   }
@@ -281,7 +288,7 @@ instanceWizard.castSpell()
 
 //Code Here
 class Phone {
-  constructor(brend, model, storage, color, price, sold){
+  constructor(brend, model, storage, color, price){
     this.brend = brend;
     this.model = model;
     this.storage = storage; 
